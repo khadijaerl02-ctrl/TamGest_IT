@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="content">
+        
+<div id="sidebar-container"></div>
+
+        <main class="main-content">
+            <section class="welcome">
+            
+                
+                <div class="welcome-header">
+                    <h1>Bienvenue dans TamGest IT</h1>
+            
+                    <div class="welcome-actions">
+            
+                        <a href="tacheajout.html" class="welcome-btn" title="Créer une tâche" aria-label="Créer une tâche">
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
+                        <!-- Liste des tâches --> 
+                         <a href="tacheliste.html" class="welcome-btn" title="Liste des tâches"
+                            aria-label="Liste des tâches">
+                            <i class="fa-solid fa-list-check"></i> 
+                        </a>
+            
+                        
+                    </div>
+                </div>
+            
+                <p>
+                    Solution de gestion du département informatique :
+                    équipements, stock, tâches et interventions.
+                </p>
+                
+            
+            </section>
+            
+            
+            
+
+
+                <div class="cards">
+                
+                    <div class="card">
+                        <div class="icon equipement">
+                            <i class="fa-solid fa-desktop"></i>
+                        </div>
+                
+                        <div class="card-info">
+                            <h3>Équipements</h3>
+                            <h2 id="equipementsCount">0</h2>
+
+                            
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <div class="icon stock">
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                        </div>
+                
+                        <div class="card-info">
+                            <h3>Stock</h3>
+                            <h2 id="stockCount">0</h2>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <div class="icon intervention">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                
+                        <div class="card-info">
+                            <h3>Interventions</h3>
+                            <h2 id="interventionsCount">0</h2>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <div class="icon tache">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                        </div>
+                
+                        <div class="card-info">
+                            <h3>Tâches</h3>
+                            <h2 id="tasksCount">0</h2>
+                            
+                        </div>
+                    </div>
+                
+                </div>
+
+        </main>
+    </div>
+    <script src="sidebar.js"></script>
+    <script src="java.js"></script>
+    <script src="protection.js"></script>
+</body>
+</html>

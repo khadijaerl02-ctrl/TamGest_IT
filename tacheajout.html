@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="content">
+        <div id="sidebar-container"></div>
+        <main class="main-content">
+        
+            <div class="form-card">
+        
+                <div class="form-header">
+        
+                    <h2>
+                        <i class="fa-solid fa-clipboard-check"></i>
+                        Ajouter une tâche
+                    </h2>
+        
+                    <p>
+                        Planifiez une nouvelle tâche informatique.
+                    </p>
+        
+                </div>
+        
+                <form id="taskForm">
+        
+                    <div class="form-grid">
+        
+                        <div class="form-group">
+                            <label for="titre">Titre de la tâche</label>
+                            <input type="text" id="titre" placeholder="Ex : Installer Microsoft Office">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="categorie">Catégorie</label>
+                            <select id="categorie">
+                                <option>Maintenance</option>
+                                <option>Installation</option>
+                                <option>Configuration</option>
+                                <option>Mise à jour</option>
+                                <option>Inventaire</option>
+                                <option>Sauvegarde</option>
+                                <option>Nettoyage</option>
+                                <option>Autre</option>
+                            </select>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="responsable">Responsable</label>
+                            <input type="text" id="responsable" placeholder="Nom du technicien">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="priorite">Priorité</label>
+                            <select id="priorite">
+                                <option>Faible</option>
+                                <option>Moyenne</option>
+                                <option>Élevée</option>
+                                <option>Urgente</option>
+                            </select>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="dateDebut">Date de début</label>
+                            <input type="date" id="dateDebut">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="dateFin">Date limite</label>
+                            <input type="date" id="dateFin">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="heure">Heure</label>
+                            <input type="time" id="heure">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="statut">Statut</label>
+                            <select id="statut">
+                                <option>À faire</option>
+                                <option>En cours</option>
+                                <option>Terminée</option>
+                                <option>Annulée</option>
+                            </select>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="departement">Département</label>
+                            <select id="departement">
+                                <option>Informatique</option>
+                                <option>Comptabilité</option>
+                                <option>RH</option>
+                                <option>Commercial</option>
+                            </select>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="equipement">Équipement concerné</label>
+                            <input type="text" id="equipement">
+                        </div>
+        
+        
+                        
+        
+                    </div>
+        
+                    <div class="form-group full-width">
+        
+                        <label for="description">Description</label>
+        
+                        <textarea id="description" rows="5" placeholder="Décrivez la tâche à réaliser..."></textarea>
+        
+                    </div>
+        
+                    <div class="buttons">
+        
+                        <button type="reset" class="cancel">
+                            Annuler
+                        </button>
+        
+                        <button type="submit" class="save">
+                            <i class="fa-solid fa-floppy-disk"></i>
+                            Enregistrer
+                        </button>
+        
+
+                    </div>
+        
+                </form>
+        
+            </div>
+        
+        </main>
+
+
+    </div>
+    <script src="sidebar.js"></script>
+    <script src="java.js"></script>
+    <script src="taches.js"></script>
+    <script src="protection.js"></script>
+</body>
+
+</html>

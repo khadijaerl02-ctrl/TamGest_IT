@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Connexion - TamGest IT</title>
+
+    <link rel="stylesheet" href="connexion.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-card">
+
+            <div class="login-logo">
+            
+                <div class="logos-container">
+            
+                    <img src="logo_TamGestIT.png" alt="Logo TamGest IT">
+            
+                    <span class="logo-separator"></span>
+            
+                    <img src="logoEntreprise.png" alt="Logo de l'entreprise">
+            
+                </div>
+            
+                <h1>TamGest IT</h1>
+            
+                <p>Gestion du parc informatique</p>
+            
+            </div>
+            
+
+
+            <div class="login-header">
+                <h2>Connexion</h2>
+                <p>Connectez-vous à votre compte</p>
+            </div>
+
+            <form id="loginForm">
+
+                <div class="input-group">
+                    <label for="identifiant">Identifiant</label>
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-user"></i>
+
+                        <input type="text" id="identifiant" placeholder="Entrez votre identifiant" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="motDePasse">Mot de passe</label>
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input type="password" id="motDePasse" placeholder="Entrez votre mot de passe" required>
+
+                        <button type="button" id="togglePassword" class="toggle-password"
+                            aria-label="Afficher le mot de passe">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <p id="messageErreur" class="error-message"></p>
+
+                <button type="submit" class="login-btn">
+                    Se connecter
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </form>
+
+            <div class="login-footer">
+                <p>© 2026 TamGest IT</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="connexion.js"></script>
+    <script src="java.js"></script>
+</body>
+
+</html>

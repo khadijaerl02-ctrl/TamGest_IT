@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div id="sidebar-container"></div>
+        <main class="main-content">
+            <section class="welcome">
+                <h1>Liste des articles</h1>
+                <p>Consultez et gérez les articles disponibles dans le stock informatique.</p>
+            </section>
+            
+            <div class="table-card">
+            
+                <div class="table-header">
+            
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="searchArticle" placeholder="Rechercher un article...">
+                    </div>
+            
+                    <div class="table-actions">
+            
+                        <select id="filterCategorie">
+                            <option value="">Toutes les catégories</option>
+                            <option>Ordinateurs</option>
+                            <option>Périphériques</option>
+                            <option>Imprimantes</option>
+                            <option>Réseau</option>
+                            <option>Câbles</option>
+                            <option>Consommables</option>
+                            <option>Autres</option>
+                        </select>
+            
+                        <a href="stock.html" class="add-btn">
+                            <i class="fa-solid fa-plus"></i>
+                            Ajouter un article
+                        </a>
+            
+                    </div>
+            
+                </div>
+            
+                <table>
+            
+                    <thead>
+            
+                        <tr>
+            
+                            <th>Désignation</th>
+                            <th>Catégorie</th>
+                            <th>Marque</th>
+                            <th>Quantité</th>
+                            <th>Seuil</th>
+                            <th>Unité</th>
+                            <th>Emplacement</th>
+                            <th>Fournisseur</th>
+                            <th>Actions</th>
+            
+                        </tr>
+            
+                    </thead>
+            
+                    <tbody id="articlesTable">
+            
+                    </tbody>
+            
+                </table>
+            
+                <div id="emptyArticles" class="empty">
+            
+                    <i class="fa-solid fa-box-open"></i>
+            
+                    <h3>Aucun article enregistré</h3>
+            
+                    <p>Ajoutez votre premier article pour commencer.</p>
+            
+                </div>
+            
+            </div>
+        </main>
+
+    </div>
+    <script src="sidebar.js"></script>
+    <script src="java.js"></script>
+    <script src="stock.js"></script>
+    <script src="protection.js"></script>
+</body>
+</html>

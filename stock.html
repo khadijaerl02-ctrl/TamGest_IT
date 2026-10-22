@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="content">
+        <div id="sidebar-container"></div>
+
+        <main class="main-content">
+
+            <div class="form-card">
+            
+                <div class="form-header">
+            
+                    <h2>
+                        <i class="fa-solid fa-box-open"></i>
+                        Ajouter un article
+                    </h2>
+            
+                    <p>
+                        Ajoutez un nouvel article au stock informatique.
+                    </p>
+            
+                </div>
+            
+                <form id="stockForm">
+            
+                    <div class="form-grid">
+            
+                        <div class="form-group">
+            
+                            <label for="designation">Désignation</label>
+            
+                            <input type="text" id="designation" placeholder="">
+            
+                        </div>
+            
+                        <div class="form-group">
+            
+                            <label for="categorie">Catégorie</label>
+            
+                            <select id="categorie">
+            
+                                <option>Ordinateurs</option>
+                                <option>Périphériques</option>
+                                <option>Imprimantes</option>
+                                <option>Réseau</option>
+                                <option>Câbles</option>
+                                <option>Consommables</option>
+                                <option>Autres</option>
+            
+                            </select>
+            
+                        </div>
+            
+                        <div class="form-group">
+            
+                            <label for="marque">Marque</label>
+            
+                            <input type="text" id="marque" placeholder="">
+            
+                        </div>
+            
+                        <div class="form-group">
+            
+                            <label for="quantite">Quantité</label>
+            
+                            <input type="number" id="quantite" min="0" placeholder="0">
+            
+                        </div>
+            
+                        <div class="form-group">
+            
+                            <label for="seuil">Seuil d'alerte</label>
+            
+                            <input type="number" id="seuil" min="0" placeholder="5">
+            
+                        </div>
+            
+                        <div class="form-group">
+            
+                            <label for="unite">Unité</label>
+            
+                            <select id="unite">
+            
+                                <option>Pièce</option>
+                                <option>Boîte</option>
+                                <option>Carton</option>
+                                <option>Ramette</option>
+            
+                            </select>
+            
+                        </div>
+            
+                        <div class="form-group">
+            
+                            <label for="emplacement">Emplacement</label>
+            
+                            <input type="text" id="emplacement" placeholder="">
+            
+                        </div>
+            
+                        <div class="form-group">
+            
+                            <label for="fournisseur">Fournisseur</label>
+            
+                            <input type="text" id="fournisseur" placeholder="">
+            
+                        </div>
+            
+                    </div>
+            
+                    <div class="form-group full-width">
+            
+                        <label for="description">Description</label>
+            
+                        <textarea id="description" rows="5" placeholder="Informations complémentaires..."></textarea>
+            
+                    </div>
+            
+                    <div class="buttons">
+            
+                        <button type="reset" class="cancel">
+            
+                            Annuler
+            
+                        </button>
+            
+                        <button type="submit" class="save">
+            
+                            <i class="fa-solid fa-floppy-disk"></i>
+            
+                            Enregistrer
+            
+                        </button>
+            
+                    </div>
+            
+                </form>
+            
+            </div>
+        </main>
+
+    </div>
+    <script src="sidebar.js"></script>
+    <script src="java.js"></script>
+    <script src="stock.js"></script>
+    <script src="protection.js"></script>
+</body>
+</html>

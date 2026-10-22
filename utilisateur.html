@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="content">
+        <div id="sidebar-container"></div>
+        <main class="main-content">
+        
+            <div class="form-card">
+        
+                <div class="form-header">
+        
+                    <h2>
+                        <i class="fa-solid fa-user-plus"></i>
+                        Ajouter un utilisateur
+                    </h2>
+        
+                    <p>Remplissez les informations du nouvel utilisateur.</p>
+        
+                </div>
+        
+                <form id="userForm">
+        
+                    <div class="form-grid">
+        
+                        <div class="form-group">
+                            <label for="matricule">Matricule</label>
+                            <input type="text" id="matricule" placeholder="Ex : EMP001">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" placeholder="Nom">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="prenom">Prénom</label>
+                            <input type="text" id="prenom" placeholder="Prénom">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="poste">Poste</label>
+                            <input type="text" id="poste" placeholder="Ex : Technicien IT">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="departement">Département</label>
+                            <select id="departement">
+                                <option>Informatique</option>
+                                <option>Comptabilité</option>
+                                <option>RH</option>
+                                <option>Commercial</option>
+                            </select>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="email">Email professionnel</label>
+                            <input type="email" id="email" placeholder="nom@entreprise.com">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="telephone">Téléphone</label>
+                            <input type="text" id="telephone" placeholder="06XXXXXXXX">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="bureau">Bureau</label>
+                            <input type="text" id="bureau" placeholder="Ex : Bureau A12">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="dateEmbauche">Date d'embauche</label>
+                            <input type="date" id="dateEmbauche">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="statut">Statut</label>
+                            <select id="statut">
+                                <option>Actif</option>
+                                <option>Congé</option>
+                                <option>Inactif</option>
+                            </select>
+                        </div>
+        
+                    </div>
+        
+                    <div class="form-group full-width">
+        
+                        <label for="remarque">Remarques</label>
+        
+                        <textarea id="remarque" rows="5" placeholder="Informations complémentaires..."></textarea>
+        
+                    </div>
+        
+                    <div class="buttons">
+        
+                        <button type="reset" class="cancel">
+                            Annuler
+                        </button>
+        
+                        <button type="submit" class="save">
+                            <i class="fa-solid fa-floppy-disk"></i>
+                            Enregistrer
+                        </button>
+        
+                    </div>
+        
+                </form>
+        
+            </div>
+        
+        </main>
+
+    </div>
+    <script src="sidebar.js"></script>
+    <script src="java.js"></script>
+    <script src="protection.js"></script>
+    <script src="utilisateur.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div id="sidebar-container"></div>
+
+        <main class="main-content">
+        
+            <section class="welcome">
+                <h1>Liste des équipements</h1>
+                <p>Consultez et gérez les équipements informatiques.</p>
+            </section>
+        
+            <div class="table-card">
+        
+                <div class="table-header">
+        
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="searchInput" placeholder="Rechercher un équipement...">
+                    </div>
+        
+                    <div class="table-actions">
+        
+                        <select id="filterType">
+                            <option value="">Tous les types</option>
+                            <option>PC Portable</option>
+                            <option>PC Bureau</option>
+                            <option>Imprimante</option>
+                            <option>Écran</option>
+                            <option>Switch</option>
+                            <option>Routeur</option>
+                        </select>
+        
+                        <select id="filterEtat">
+                            <option value="">Tous les états</option>
+                            <option>En service</option>
+                            <option>Maintenance</option>
+                            <option>En panne</option>
+                        </select>
+        
+                        <a href="ajouter-equipement.html" class="add-btn">
+                            <i class="fa-solid fa-plus"></i>
+                            Ajouter un équipement
+                        </a>
+        
+                    </div>
+        
+                </div>
+        
+                <table>
+        
+                    <thead>
+        
+                        <tr>
+                            <th>Nom</th>
+                            <th>Type</th>
+                            <th>Marque</th>
+                            <th>Département</th>
+                            <th>Utilisateur</th>
+                            <th>État</th>
+                            <th>N° de série</th>
+                            <th>Anty Virus</th>
+                            <th>Domaine</th>
+                            <th>WIFI</th>
+                            <th>Date d'acha</th>
+                            <th>Actions</th>
+                            
+                        </tr>
+        
+                    </thead>
+        
+                    <tbody id="equipementsTable">
+        
+                        
+        
+                    </tbody>
+        
+                </table>
+        
+                <div id="emptyMessage" class="empty">
+        
+                    <i class="fa-solid fa-box-open"></i>
+        
+                    <h3>Aucun équipement enregistré</h3>
+        
+                    <p>Ajoutez votre premier équipement pour commencer.</p>
+        
+                </div>
+        
+            </div>
+        
+        </main>
+        
+        
+    </div>
+    <script src="sidebar.js"></script>
+    <script src="java.js"></script>
+    <script src="equipement.js"></script>
+<script src="protection.js"></script>
+</body>
+</html>

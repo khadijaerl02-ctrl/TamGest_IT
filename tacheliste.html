@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="content">
+        <div id="sidebar-container"></div>
+        <main class="main-content">
+            <section class="welcome">
+                <h1>Liste des tâches</h1>
+                <p>Consultez et gérez les tâches du département informatique.</p>
+
+            </section>
+            <div class="table-card">
+                <div class="table-header">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="searchTask" placeholder="Rechercher une tâche...">
+
+                    </div>
+                    <div class="table-actions">
+                    
+                        <select id="filterPriorite">
+                            <option value="">Toutes les priorités</option>
+                            <option>Faible</option>
+                            <option>Moyenne</option>
+                            <option>Élevée</option>
+                        </select>
+                    
+                        <select id="filterStatut">
+                            <option value="">Tous les statuts</option>
+                            <option>À faire</option>
+                            <option>En cours</option>
+                            <option>Terminée</option>
+                        </select>
+                    
+                        <a href="tacheajout.html" class="add-btn">
+                            <i class="fa-solid fa-plus"></i>
+                            Ajouter une tâche
+                        </a>
+                    
+                    </div>
+
+                </div>
+
+                <table>
+                
+                    <thead>
+                
+                        <tr>
+                            <th>N°</th>
+                            <th>Tâche</th>
+                            <th>Responsable</th>
+                            <th>Priorité</th>
+                            <th>Date début</th>
+                            <th>Échéance</th>
+                            <th>Statut</th>
+                            <th>Actions</th>
+                        </tr>
+                
+                    </thead>
+                
+                    <tbody id="tasksTable">
+                
+                    </tbody>
+                
+                </table>
+
+                <div id="emptyMessage" class="empty">
+                
+                    <i class="fa-solid fa-list-check"></i>
+                
+                    <h3>Aucune tâche enregistrée</h3>
+                
+                    <p>Ajoutez votre première tâche.</p>
+                
+                </div>
+
+
+            </div>
+
+        </main>
+
+    </div>
+    <script src="sidebar.js"></script>
+    <script src="java.js"></script>
+    <script src="taches.js"></script>
+    <script src="protection.js"></script>
+</body>
+
+</html>

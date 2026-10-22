@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+
+        <div id="sidebar-container"></div>
+        <main class="main-content">
+        
+            <div class="form-card">
+        
+                <div class="form-header">
+                    <h2>
+                        <i class="fa-solid fa-plus"></i>
+                        Ajouter un équipement
+                    </h2>
+                    <p>Remplissez les informations de l'équipement.</p>
+                </div>
+        
+                <form>
+        
+                    <div class="form-grid">
+        
+                        <div class="form-group">
+                            <label for="nom">Nom de l'équipement</label>
+                            <input id="nom" type="text" placeholder="Ex : Dell Latitude 5420">
+                        </div>
+                        <div class="form-group">
+                            <label for="type">Type</label>
+                            <select id="type">
+                                <option>PC Portable</option>
+                                <option>PC Bureau</option>
+                                <option>Imprimante</option>
+                                <option>Écran</option>
+                                <option>Switch</option>
+                                <option>Routeur</option>
+                                <option>Autre</option>
+                            </select>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="Marque">Marque</label>
+                            <input id="Marque" type="text" placeholder="Ex : Dell">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="sn">N° de série</label>
+                            <input id="sn" type="text">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="departement">Département</label>
+                            <select id="departement">
+                                <option>Informatique</option>
+                                <option>Comptabilité</option>
+                                <option>RH</option>
+                                <option>Commercial</option>
+                            </select>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="Utilisateur">Utilisateur</label>
+                            <input id="Utilisateur" type="text">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="od">One Drive</label>
+                            <select id="od">
+                                <option>Oui</option>
+                                <option>Non</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="av">Anty Virus</label>
+                            <select id="av">
+                                <option>Windows defender</option>
+                                <option>Kaspersky Endpoint security for windows</option>
+                                <option>Autre</option>
+                            </select>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="domaine">Domaine</label>
+                            <select id="domaine">
+                                <option>Goldavi</option>
+                                <option>Sofalim</option>
+        
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="etat">État</label>
+                            <select id="etat">
+                                <option>En service</option>
+                                <option>Maintenance</option>
+                                <option>En panne</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="wifi">WIFI</label>
+                            <input id="wifi" type="text">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="dateA">Date d'achat</label>
+                            <input id="dateA" type="date">
+                        </div>
+        
+                    </div>
+        
+                    <div class="buttons">
+                        <button type="reset" class="cancel">
+                            Annuler
+                        </button>
+        
+                        <button type="submit" class="save">
+                            Enregistrer
+                        </button>
+                    </div>
+        
+                </form>
+        
+            </div>
+        
+        </main>
+
+    </div>
+    <script src="java.js"></script>
+    <script src="equipement.js"></script>
+    <script src="protection.js"></script>
+    <script src="sidebar.js"></script>
+</body>
+</html>

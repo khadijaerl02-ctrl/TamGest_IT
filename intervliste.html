@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="content">
+        <div id="sidebar-container"></div>
+        <main class="main-content">
+        
+            <section class="welcome">
+                <h1>Liste des interventions</h1>
+                <p>Consultez et gérez les interventions réalisées.</p>
+            </section>
+        
+            <div class="table-card">
+        
+                <div class="table-header">
+        
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="searchIntervention" placeholder="Rechercher une intervention...">
+                    </div>
+        
+                    <div class="table-actions">
+        
+                        <select id="filterStatut">
+                            <option value="">Tous les statuts</option>
+                            <option>En cours</option>
+                            <option>Terminée</option>
+                        </select>
+        
+                        <select id="filterType">
+                            <option value="">Tous les types</option>
+                            <option>Maintenance</option>
+                            <option>Réparation</option>
+                            <option>Installation</option>
+                            <option>Configuration</option>
+                            <option>Mise à jour</option>
+                        </select>
+        
+                        <a href="intervajout.html" class="add-btn">
+                            <i class="fa-solid fa-plus"></i>
+                            Ajouter une intervention
+                        </a>
+        
+                    </div>
+        
+                </div>
+        
+                <table>
+        
+                    <thead>
+        
+                        <tr>
+        
+                            <th>N°</th>
+                            <th>Équipement</th>
+                            <th>Technicien</th>
+                            <th>Type</th>
+                            <th>Date</th>
+                            <th>Durée</th>
+                            <th>Statut</th>
+                            <th>Actions</th>
+        
+                        </tr>
+        
+                    </thead>
+        
+                    <tbody id="interventionsTable">
+        
+                       
+        
+                    </tbody>
+        
+                </table>
+        
+                <div id="emptyMessage" class="empty">
+        
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+        
+                    <h3>Aucune intervention enregistrée</h3>
+        
+                    <p>Ajoutez votre première intervention.</p>
+        
+                </div>
+        
+            </div>
+        
+        </main>
+    </div>
+    <script src="sidebar.js"></script>
+    <script src="java.js"></script>
+    <script src="interventions.js"></script>
+    <script src="protection.js"></script>
+</body>
+
+</html>
